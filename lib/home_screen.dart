@@ -71,15 +71,18 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               width: double.infinity,
               height: 30,
+              padding: const EdgeInsets.only(left: 16), // เพิ่มระยะห่างจากซ้าย
               decoration: const BoxDecoration(
                 border: Border(
                   top: BorderSide(color: Color.fromARGB(255, 240, 240, 240)),
-                  bottom: BorderSide(
-                    color: Color.fromARGB(255, 240, 240, 240),
-                  ),
+                  bottom: BorderSide(color: Color.fromARGB(255, 240, 240, 240)),
                 ),
               ),
-              child: const Text("WOMEN MEN KIDS",textAlign: TextAlign.center),
+              alignment: Alignment.centerLeft, // จัดข้อความไปทางซ้าย
+              child: const Text(
+                "WOMEN MEN KIDS",
+                textAlign: TextAlign.left, // จัดข้อความให้อยู่ทางซ้าย
+              ),
             ),
 
             Expanded(
